@@ -317,7 +317,7 @@ input, select, textarea {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-		align-items: flex-end; /* Changed from stretch to flex-end*/
+		align-items: stretch; /* Changed from stretch to flex-end*/
 	}
 
 		.row > * {
@@ -2314,6 +2314,7 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+		align-items: flex-end; /* Added this whole line*/
 	}
 
 		.image img {
