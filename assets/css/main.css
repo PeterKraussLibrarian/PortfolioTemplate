@@ -17,7 +17,6 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
-	text-align: center; /*Added this*/
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -209,10 +208,12 @@ input, select, textarea {
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
+			text-align: center; /*added this*/
 		}
 
 	h2 {
 		font-size: 1.1em;
+		text-align: center; /*added this*/
 	}
 
 	h3 {
@@ -234,6 +235,7 @@ input, select, textarea {
 	@media screen and (max-width: 980px) {
 
 		h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
+			text-align: center; /*added this*/
 			display: none;
 		}
 
@@ -243,6 +245,7 @@ input, select, textarea {
 
 		h2 {
 			font-size: 1em;
+			text-align: center; /*added this*/
 		}
 
 		h3 {
@@ -321,6 +324,7 @@ input, select, textarea {
 	.row {
 		display: flex;
 		flex-wrap: wrap;
+		text-align: center; /*added this*/
 		box-sizing: border-box;
 		align-items: stretch;
 	}
