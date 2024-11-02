@@ -22,7 +22,7 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: flex-end; /* Changed to flex-end from baseline*/}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -317,7 +317,7 @@ input, select, textarea {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-		align-items: baseline;
+		align-items: stretch;
 	}
 
 		.row > * {
@@ -805,7 +805,7 @@ input, select, textarea {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				align-items: stretch;
+				align-items: flex-end; /* Changed to flex-end from stretch*/
 			}
 
 				.row > * {
@@ -1050,7 +1050,7 @@ input, select, textarea {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				align-items: stretch;
+				align-items: flex-end; /* Changed to flex-end from stretch*/
 			}
 
 				.row > * {
@@ -1295,7 +1295,7 @@ input, select, textarea {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				align-items: stretch;
+				align-items: flex-end; /* Changed to flex-end from stretch*/
 			}
 
 				.row > * {
@@ -1540,7 +1540,7 @@ input, select, textarea {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				align-items: stretch;
+				align-items: flex-end; /* Changed to flex-end from stretch*/
 			}
 
 				.row > * {
@@ -1929,7 +1929,7 @@ input, select, textarea {
 
 		ul.actions li {
 			padding: 0 0 0 1em;
-			vertical-align: middle;
+			vertical-align: flex-end; /* Changed to flex-end from middle*/
 		}
 
 		ul.actions.special {
