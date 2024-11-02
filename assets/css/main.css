@@ -212,9 +212,18 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.1em;
-		text-align: center; /*added this*/
+		display: block; /* This is fine, but we can add text-align to its parent */
+		font-size: 1.5em;
+		margin: 0; /* Reset margins to avoid pushing the element */
+		padding: 0; /* Reset padding if there's any */
+		font-weight: bold;
+		text-align: center; /* Center the text within its parent */
 	}
+		
+		
+	/* EDITED OUT TO TRY NEW CODE h2 {
+		font-size: 1.1em;
+	} */
 
 	h3 {
 		font-size: 1em;
