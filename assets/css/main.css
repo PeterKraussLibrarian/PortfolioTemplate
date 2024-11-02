@@ -192,7 +192,6 @@ input, select, textarea {
 
 			h1 {
 				font-size: 1.75em;
-				text-align: center; /*added this*/
 			}
 
 		}
@@ -200,7 +199,6 @@ input, select, textarea {
 	h2, h3, h4, h5, h6 {
 		font-weight: 900;
 		line-height: 1.5;
-		text-align: center; /*added this*/
 		margin: 0 0 2em 0;
 		text-transform: uppercase;
 		letter-spacing: 0.35em;
@@ -208,12 +206,11 @@ input, select, textarea {
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
-			text-align: center; /*added this*/
 		}
 
 	h2 {
 		display: block; /* This is fine, but we can add text-align to its parent */
-		font-size: 1.5em;
+		font-size: 1.1em;
 		margin: 0; /* Reset margins to avoid pushing the element */
 		padding: 0; /* Reset padding if there's any */
 		font-weight: bold;
@@ -221,9 +218,6 @@ input, select, textarea {
 	}
 		
 		
-	/* EDITED OUT TO TRY NEW CODE h2 {
-		font-size: 1.1em;
-	} */
 
 	h3 {
 		font-size: 1em;
