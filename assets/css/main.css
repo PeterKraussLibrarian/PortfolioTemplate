@@ -3201,6 +3201,14 @@ input, select, textarea {
 		text-align: center; /* Center text inside the inner div */
 	}
 
+	h2 {
+		font-size: 1.5em;
+		margin: 0; /* Reset margins to avoid pushing the element */
+		padding: 0; /* Reset padding if there's any */
+		font-weight: bold;
+		text-align: center; /* Ensure the heading text is centered */
+	}
+
 	.icons {
 		list-style: none; /* Remove default list styles */
 		padding: 0; /* Remove default padding */
