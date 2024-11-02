@@ -317,7 +317,7 @@ input, select, textarea {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-		align-items: stretch; /* Changed from stretch to flex-end*/
+		align-items: flex-end; /*changed this to flex-end*/
 	}
 
 		.row > * {
