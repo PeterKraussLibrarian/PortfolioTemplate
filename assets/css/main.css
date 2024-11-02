@@ -192,6 +192,7 @@ input, select, textarea {
 
 			h1 {
 				font-size: 1.75em;
+				text-align: center; /*added this*/
 			}
 
 		}
@@ -199,6 +200,7 @@ input, select, textarea {
 	h2, h3, h4, h5, h6 {
 		font-weight: 900;
 		line-height: 1.5;
+		text-align: center; /*added this*/
 		margin: 0 0 2em 0;
 		text-transform: uppercase;
 		letter-spacing: 0.35em;
@@ -206,17 +208,13 @@ input, select, textarea {
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
+			text-align: center; /*added this*/
 		}
 
 	h2 {
-		display: block; /* This is fine, but we can add text-align to its parent */
 		font-size: 1.1em;
-		margin: 0; /* Reset margins to avoid pushing the element */
-		padding: 0; /* Reset padding if there's any */
-		font-weight: bold;
-		text-align: center; /* Center the text within its parent */
+		text-align: center; /*added this*/
 	}
-		
 
 	h3 {
 		font-size: 1em;
@@ -237,7 +235,6 @@ input, select, textarea {
 	@media screen and (max-width: 980px) {
 
 		h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
-			text-align: center; /*added this*/
 			display: none;
 		}
 
@@ -245,18 +242,10 @@ input, select, textarea {
 
 	@media screen and (max-width: 736px) {
 
-		/*added this*/
 		h2 {
-			display: block; /* This is fine, but we can add text-align to its parent */
-			font-size: 1.1em;
-			margin: 0; /* Reset margins to avoid pushing the element */
-			padding: 0; /* Reset padding if there's any */
-			font-weight: bold;
-			text-align: center; /* Center the text within its parent */
-		/*h2 {
 			font-size: 1em;
-			text-align: center; /*added this
-		}  */
+			text-align: center; /*added this*/
+		}
 
 		h3 {
 			font-size: 0.8em;
@@ -2848,20 +2837,6 @@ input, select, textarea {
 
 		}
 
-
-		/* from chatgpt */
-		.contact-section {
-			text-align: center;
-		}
-		
-		.contact-section .icons {
-			list-style: none;
-			padding: 0;
-			display: flex;
-			justify-content: center;
-			gap: 10px; /* Adjust gap between icons as needed */
-		}
-
 /* Header */
 
 	#header {
@@ -3201,41 +3176,6 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		display: flex; /* Use flexbox to help with centering */
-		justify-content: center; /* Center the inner div */
-		align-items: center; /* Center vertically if needed */
-		flex-direction: column; /* Stack elements vertically */
-	}
-
-	.inner {
-		text-align: center; /* Center text inside the inner div */
-	}
-
-	h2 {
-		font-size: 1.1em;
-		margin: 0; /* Reset margins to avoid pushing the element */
-		padding: 0; /* Reset padding if there's any */
-		font-weight: bold;
-		text-align: center; /* Ensure the heading text is centered */
-	}
-
-	.icons {
-		list-style: none; /* Remove default list styles */
-		padding: 0; /* Remove default padding */
-		display: flex; /* Use flexbox for icon layout */
-		justify-content: center; /* Center icons horizontally */
-		gap: 10px; /* Space between icons */
-	}
-
-	.copyright {
-		margin-top: 20px; /* Space above the copyright text */
-		text-align: center; /* Center the copyright text */
-	}
-
-
-/* COMMENTING OUT TO TRY SOMETHING NEW
-	d
-	#footer {
 		padding: 5em 0 6em 0 ;
 		background-color: #f6f6f6;
 	}
@@ -3295,8 +3235,6 @@ input, select, textarea {
 						padding-left: 0;
 						margin-left: 0;
 					}
-					
-					*/
 
 		@media screen and (max-width: 1280px) {
 
