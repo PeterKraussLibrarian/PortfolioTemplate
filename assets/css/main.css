@@ -2838,6 +2838,20 @@ input, select, textarea {
 
 		}
 
+
+		/* from chatgpt */
+		.contact-section {
+			text-align: center;
+		}
+		
+		.contact-section .icons {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			gap: 10px; /* Adjust gap between icons as needed */
+		}
+
 /* Header */
 
 	#header {
