@@ -3164,11 +3164,12 @@ input, select, textarea {
 
 		}
 
-/* Footer */
+/* Footer COMMENTS MEAN I've adjusted parts */
 
 	#footer {
-		padding: 5em 0 6em 0 ;
-		background-color: #f6f6f6;
+		/*padding: 5em 0 6em 0 ; */
+		padding: 3em 0 4em 0 ;
+		background-color:transparent; /*changed to transparent*/
 	}
 
 		#footer > .inner {
@@ -3203,7 +3204,8 @@ input, select, textarea {
 			#footer > .inner .copyright {
 				width: 100%;
 				padding: 0;
-				margin-top: 5em;
+				/* margin-top: 5em; */
+				margin-top: 4em;
 				list-style: none;
 				font-size: 0.8em;
 				color: rgba(88, 88, 88, 0.5);
@@ -3230,7 +3232,8 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#footer {
-				padding: 5em 0 3em 0 ;
+				/* padding: 5em 0 3em 0 ; */
+				padding: 3em 0 2em 0 ;
 			}
 
 				#footer > .inner section:nth-child(1) {
@@ -3262,7 +3265,8 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#footer {
-				padding: 3em 0 1em 0 ;
+				/* padding: 3em 0 1em 0 ; */
+				padding: 2em 0 1em 0 ;
 			}
 
 				#footer > .inner {
@@ -3288,7 +3292,8 @@ input, select, textarea {
 					}
 
 					#footer > .inner .copyright {
-						margin-top: 3em;
+						/* margin-top: 3em; */
+						margin-top: 2em;
 					}
 
 		}
@@ -3296,7 +3301,8 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			#footer > .inner .copyright {
-				margin-top: 3em;
+				/* margin-top: 3em; */
+				margin-top: 2em;
 			}
 
 				#footer > .inner .copyright li {
