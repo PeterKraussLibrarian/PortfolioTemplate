@@ -54,13 +54,12 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<header>
-                                <p></p>
-                                <p>Hi, welcome to my ePortfolio! Feel free to grab a book of the shelf and join me on my librarian journey - my librarianSHIP, if you will.</p>
-                                <p></p>
-                            </header>
-								<!-- <h1>Welcome!</h1>
+                        <header>
+                            <h1>Welcome!</h1>
 								<ul class="alt">
+                                    <li>Hi, welcome to my ePortfolio! Feel free to grab a book of the shelf and join me on my librarian journey - my librarianSHIP, if you will.</li>
+                                </header>
+                                    <!-- 
 								<blockquote>"Libraries are places for everybody... places that are safe and accepting of the community."
 								<li><p></p>- <a href="https://www.jasonwritesbooks.com">Jason Reynolds</a></li>
 								</blockquote>
