@@ -321,7 +321,9 @@ input, select, textarea {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-		align-items: stretch;
+		align-items: flex-end; /*added this*/
+		/* align-items: stretch; */
+
 	}
 
 		.row > * {
@@ -330,7 +332,7 @@ input, select, textarea {
 
 		.row.gtr-uniform > * > :last-child {
 			margin-bottom: 0;
-			align-items: end; /*added this*/
+			align-items: flex-end; /*added this*/
 		}
 
 		.row.aln-left {
@@ -565,7 +567,8 @@ input, select, textarea {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				align-items: stretch;
+				/* align-items: stretch; */
+				align-items: flex-end; /*added this*/
 			}
 
 				.row > * {
@@ -810,7 +813,8 @@ input, select, textarea {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				align-items: stretch;
+				align-items: flex-end; /*added this*/
+				/* align-items: stretch; */
 			}
 
 				.row > * {
@@ -1055,7 +1059,8 @@ input, select, textarea {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				align-items: stretch;
+				align-items: flex-end; /*added this*/
+				/* align-items: stretch; */
 			}
 
 				.row > * {
@@ -1300,7 +1305,8 @@ input, select, textarea {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				align-items: stretch;
+				align-items: flex-end; /*added this*/
+				/*align-items: stretch;*/
 			}
 
 				.row > * {
@@ -1545,7 +1551,7 @@ input, select, textarea {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				align-items: stretch;
+				/* align-items: stretch; */
 			}
 
 				.row > * {
