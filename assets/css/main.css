@@ -330,6 +330,7 @@ input, select, textarea {
 
 		.row.gtr-uniform > * > :last-child {
 			margin-bottom: 0;
+			align-items: end; /*added this*/
 		}
 
 		.row.aln-left {
