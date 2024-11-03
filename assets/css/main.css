@@ -2565,7 +2565,8 @@ input, select, textarea {
 /* Author */
 
 	.author {
-		margin-top: 5px; /* Adds some space if needed */
+		margin-top: 10px; /* Adds some space if needed */
+		margin-left: 10px;
 		font-style: italic;
 		color: inherit; /* Matches the text color of the quote */
 	}
