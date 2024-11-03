@@ -1866,7 +1866,7 @@ input, select, textarea {
 /* List */
 
 	ol {
-		list-style: none;
+		list-style: none; /*changed this to from decimal*/
 		margin: 0 0 2em 0;
 		padding-left: 1.25em;
 	}
@@ -1876,12 +1876,13 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: none;
+		list-style: none; /*changed this to from disc*/
 		margin: 0 0 2em 0;
 		padding-left: 1em;
 	}
 
 		ul li {
+			list-style: none; /*Added this*/
 			padding-left: 0.5em;
 		}
 
