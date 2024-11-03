@@ -2562,6 +2562,14 @@ input, select, textarea {
 			opacity: 0.25;
 		}
 
+/* Author */
+
+	.author {
+		margin-top: 5px; /* Adds some space if needed */
+		font-style: italic;
+		color: inherit; /* Matches the text color of the quote */
+	}
+
 /* Tiles */
 
 	.tiles {
