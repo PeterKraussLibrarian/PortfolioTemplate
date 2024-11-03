@@ -45,6 +45,16 @@ blockquote, q {
 		content: none;
 	}
 
+	blockquote::before {
+		content: ""; /* Empty content to create the line */
+		position: absolute;
+		top: 0; /* Aligns with the top of the blockquote */
+		left: 0; /* Positions on the left side */
+		width: 4px; /* Line thickness */
+		height: 100%; /* Makes the line as tall as the blockquote */
+		background-color: #c9c9c9; /* Line color */
+	}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -259,14 +269,23 @@ input, select, textarea {
 	}
 
 	blockquote {
+		position: relative; /* Needed for positioning the pseudo-element */
+		display: inline-block; /* Keeps the blockquote content from stretching across the full width */
+		font-style: italic;
+		line-height: 1.5; /* Adjusts line spacing for readability */
+		padding: 0.5em 0 0.5em 1em; /* Creates space around text */
+		margin: 0 auto; /* Centers blockquote if desired */
+	}
+	
+		/* blockquote {
 		display: inline-block;
 		line-height: 1;
 		border-left: solid 4px #c9c9c9;
 		font-style: italic;
 		margin: 0 auto; /*added this*/
-		/*margin: 0 0 2em 0; */
+		/*margin: 0 0 2em 0; */ /*
 		padding: 0.5em 0 0.5em 2em;
-	}
+	} */
 
 	code {
 		background: rgba(144, 144, 144, 0.075);
