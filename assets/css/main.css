@@ -1878,13 +1878,14 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: disc; /*changed this to from disc*/
+		list-style: none; /*changed this to from disc*/
 		margin: 0 0 2em 0;
 		padding-left: 1em;
 	}
 
 		ul li {
-			/*list-style: none; */ /*Added this*/
+			list-style: none; /*Added this*/
+			list-style-type: none; /*Added this*/
 			padding-left: 0.5em;
 		}
 
