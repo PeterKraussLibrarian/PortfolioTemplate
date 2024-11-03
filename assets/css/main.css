@@ -1891,6 +1891,14 @@ input, select, textarea {
 			padding-left: 0.5em;
 		}
 
+		ul li::before {
+			content: "-"; /*Added this*/
+			list-style-type: none; /*Added this*/
+			padding-left: 0.5em;
+		}
+
+
+
 		ul.alt {
 			list-style: none;
 			list-style-type: none; /*Added this*/
