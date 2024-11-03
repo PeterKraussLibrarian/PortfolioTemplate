@@ -1879,29 +1879,29 @@ input, select, textarea {
 
 	ul {
 		list-style: none; /*changed this to from disc*/
-		list-style-type: none; /*Added this*/
-		list
 		margin: 0 0 2em 0;
 		padding-left: 1em;
 	}
 
 		ul li {
-			list-style: none; /*Added this*/
-			list-style-type: none; /*Added this*/
 			padding-left: 0.5em;
 		}
 
 		ul li::before {
-			content: "-"; /*Added this*/
-			list-style-type: none; /*Added this*/
-			padding-left: 0.5em;
+			content: "- "; /* Dash before each list item */
+			padding-right: 0.5em; /* Space between the dash and text */
+		}
+
+		/* ul li::before {
+			content: "-";
+			list-style-type: none; 
+			padding-left: 0.5em; */
 		}
 
 
 
 		ul.alt {
 			list-style: none;
-			list-style-type: none; /*Added this*/
 			padding-left: 0;
 		}
 
