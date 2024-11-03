@@ -269,6 +269,7 @@ input, select, textarea {
 	}
 
 	blockquote {
+		max-width: fit-content;
 		position: relative; /* Needed for positioning the pseudo-element */
 		display: inline-block; /* Keeps the blockquote content from stretching across the full width */
 		font-style: italic;
