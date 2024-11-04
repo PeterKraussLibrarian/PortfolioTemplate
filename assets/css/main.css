@@ -2399,14 +2399,14 @@ input, select, textarea {
 				.pdf-wrapper.fit {
 					display: block;
 					margin: 0 0 2em 0;
-					width: 100%;
+					width: 200%;
 				}
 		
 		
 				.pdf-wrapper.main {
 					display: block;
 					margin: 0 0 3em 0;
-					width: 100%;
+					width: 200%;
 				}
 		
 					
