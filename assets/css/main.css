@@ -2383,6 +2383,28 @@ input, select, textarea {
 
 			}
 
+	.pdf-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100vh; /* Full viewport height */
+		max-height: 500px; /* Limits height for larger screens */
+	}
+			
+	.pdf-wrapper .pdfobject {
+		width: 90%; /* Set to 100% width, scaled to fit smaller screens */
+		height: 100%;
+	}
+			
+	/* Additional styling for smaller screens */
+	@media (max-width: 768px) {
+		.pdf-wrapper {
+			height: 300px; /* Adjusted height for iPad or smaller screens */
+		}
+	}
+			
+
 /* Table */
 
 	.table-wrapper {
