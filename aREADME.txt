@@ -1,5 +1,3 @@
-Google it if you don't know how to do it.
-
 
 Credits:
 
