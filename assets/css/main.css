@@ -2383,32 +2383,69 @@ input, select, textarea {
 
 			}
 
-	.pdf-wrapper {
+
+
+			.pdf-wrapper {
+				border-radius: 4px;
+				border: 0;
+				display: inline-block; /*changed from inline-block to flex*/
+				position: relative;
+			}
+		
+		
+		
+		
+		
+				.pdf-wrapper.fit {
+					display: block;
+					margin: 0 0 2em 0;
+					width: 100%;
+				}
+		
+		
+				.pdf-wrapper.main {
+					display: block;
+					margin: 0 0 3em 0;
+					width: 100%;
+				}
+		
+					
+		
+					@media screen and (max-width: 736px) {
+		
+						.pdf-wrapper.main {
+							margin: 0 0 2em 0;
+						}
+		
+					}
+
+
+/*	.pdf-wrapper {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		height: 100vh; /* Full viewport height */
-		max-height: 700px; /* Limits height for larger screens */
+		height: 100vh; /* Full viewport height 
+		max-height: 700px; /* Limits height for larger screens 
 	}
 			
 	.pdf-wrapper .pdfobject {
-		width: 80%; /* Set to 100% width, scaled to fit smaller screens */
+		width: 80%; /* Set to 100% width, scaled to fit smaller screens 
 		height: 100%;
 	}
 			
-	/* Larger screen (desktop) styling */
+	/* Larger screen (desktop) styling 
 @media (min-width: 1024px) {
     .pdf-wrapper {
         max-height: 800px;
     }
     .pdf-wrapper .pdfobject {
-        width: 60%; /* Wider for large screens */
-        height: 700px; /* Keeps height consistent */
+        width: 60%; /* Wider for large screens 
+        height: 700px; /* Keeps height consistent 
     }
 }
 
-/* Tablet (iPad) styling */
+/* Tablet (iPad) styling 
 @media (min-width: 768px) and (max-width: 1023px) {
     .pdf-wrapper {
         max-height: 600px;
@@ -2419,7 +2456,7 @@ input, select, textarea {
     }
 }
 
-/* Mobile styling */
+/* Mobile styling 
 @media (max-width: 767px) {
     .pdf-wrapper {
         max-height: 400px;
@@ -2428,7 +2465,7 @@ input, select, textarea {
         width: 90%;
         height: 100%;
     }
-}
+}*/
 			
 
 /* Table */
