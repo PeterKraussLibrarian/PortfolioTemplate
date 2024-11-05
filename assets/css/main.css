@@ -2409,17 +2409,17 @@ input, select, textarea {
     }
 }
 
-/* Tablet (iPad) styling */
-@media (min-width: 768px) and (max-width: 1023px) {
+/* Tablet (iPad) styling
+@media (min-width: 768px) and (max-width: 1024px) {
     .pdf-wrapper {
         max-height: 600px;
     }
     .pdf-wrapper .pdfobject {
-        width: 70%;
-        height: 100%;
+        width: 90%;
+        height: 100%; 
     }
-}
-
+} */
+ 
 /* Mobile styling */
 @media (max-width: 767px) {
     .pdf-wrapper {
