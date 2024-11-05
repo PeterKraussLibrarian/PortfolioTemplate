@@ -2409,7 +2409,7 @@ input, select, textarea {
     }
 }
 
-/* Tablet (iPad) styling
+/* Tablet (iPad) styling */
 @media (min-width: 768px) and (max-width: 1024px) {
     .pdf-wrapper {
         max-height: 600px;
@@ -2426,7 +2426,7 @@ input, select, textarea {
         max-height: 400px;
     }
     .pdf-wrapper .pdfobject {
-        width: 90%;
+        width: 95%;
         height: 100%;
     }
 }*/
