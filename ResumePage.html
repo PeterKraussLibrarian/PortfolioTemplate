@@ -56,16 +56,16 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Resume!!!!!!!!!!!!!!!</h1>
+							<h1>Resume</h1>
 							<!-- <span class="image main"><img src="images/pic13.jpg" alt="" /></span> -->
 							
 							<div id="pdf-embed" style="display: flex; justify-content: center; align-items: center; max-height: 1024px; height: 100vh;">
-								<embed src="Peter Krauss MLIS 2024 Resume.pdf" type="application/pdf" style="width: 100%; max-width: 768px; height: 100%; object-fit: contain;">
+								<embed src="Peter Krauss MLIS 2024 Resume.pdf" type="application/pdf" style="transform: scale(1.2); transform-origin: top center; max-width: 1000px; height: 100%; object-fit: contain;">
 							</div>
 							
 							<!-- Fallback for unsupported browsers -->
-							<div style="text-align: center; padding: 4px;">
-								<p>If you cannot properly view my resume, <a href="Peter Krauss MLIS 2024 Resume.pdf" download>download the PDF here</a>.</p>
+							<div style="text-align: center; padding: 10px;">
+								<p>If you cannot view my resume, <a href="Peter Krauss MLIS 2024 Resume.pdf" download>download the PDF here</a>.</p>
 							</div>
 							
 							<!-- Mobile and Tablet-specific CSS -->
@@ -76,24 +76,27 @@
 										padding: 0;
 									}
 									#pdf-embed embed {
-										width: 50%;
+										transform: scale(1.4); /* Larger scale for mobile */
+										transform-origin: top center;
+										width: auto; /* Override any set width */
 										height: auto;
 										max-height: 100vh;
-										object-fit: contain;
 									}
 								}
 								
 								/* For tablets in landscape */
 								@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
 									#pdf-embed {
-										height: 90vh; /* Slightly less than full height for breathing room */
+										height: 90vh;
 									}
 									#pdf-embed embed {
-										width: 50%;
+										transform: scale(1.3); /* Moderate scale for tablets */
+										transform-origin: top center;
 										height: 100%;
 									}
 								}
 							</style>
+							
 							
 							<!-- <div id="pdf-embed" style="display: flex; justify-content: center; align-items: center; max-height: 1024px; height: 100vh;"> <!-- Changed height from 500 to 1024 px
 								<embed src="Peter Krauss MLIS 2024 Resume.pdf" type="application/pdf" style="width: 95%; height: 100%;"> <!-- Changed width from 90 to 95 
