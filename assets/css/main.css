@@ -2381,27 +2381,95 @@ input, select, textarea {
 					margin: 0 0 2em 0;
 				}
 
-				.image.main img {
-					width: 100%;
-				}
-
 			}
 
-
+			/*Added This*/
 	.pdf-wrapper {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		height: 100vh;
-		max-height: 1024px; /* Limits height for larger screens changed from 700 to 1024*/
+		margin: 0 auto;
+		border-radius: 4px;
+		overflow: hidden;
+		}
+			
+		.pdf-content {
+			width: 80%;
+			height: 600px; /* Base height for desktop */
+		}
+			
+			/* Desktop screens */
+		@media (min-width: 1024px) {
+			.pdf-content {
+				width: 70%;
+				height: 700px; /* Taller on larger screens */
+			}
+		}
+			
+			/* Tablet screens */
+		@media (min-width: 768px) and (max-width: 1023px) {
+			.pdf-content {
+				width: 90%;
+				height: 500px; /* Adjust height to fit tablets */
+			}
+		}
+			
+		/* Mobile screens */
+		@media (max-width: 767px) {
+			.pdf-content {
+				width: 95%;
+				height: 400px; /* Smaller height on mobile */
+			}
+		}
+
+
+/*	.pdf-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100vh; /* Full viewport height 
+		max-height: 700px; /* Limits height for larger screens 
 	}
 			
-	.pdfobject {
-		width: 80%; /* Set to 100% width, scaled to fit smaller screens */
+	.pdf-wrapper .pdfobject {
+		width: 80%; /* Set to 100% width, scaled to fit smaller screens 
 		height: 100%;
 	}
 			
+	/* Larger screen (desktop) styling 
+@media (min-width: 1024px) {
+    .pdf-wrapper {
+        max-height: 800px;
+    }
+    .pdf-wrapper .pdfobject {
+        width: 60%; /* Wider for large screens 
+        height: 700px; /* Keeps height consistent 
+    }
+}
+
+/* Tablet (iPad) styling 
+@media (min-width: 768px) and (max-width: 1023px) {
+    .pdf-wrapper {
+        max-height: 600px;
+    }
+    .pdf-wrapper .pdfobject {
+        width: 70%;
+        height: 100%;
+    }
+}
+
+/* Mobile styling 
+@media (max-width: 767px) {
+    .pdf-wrapper {
+        max-height: 400px;
+    }
+    .pdf-wrapper .pdfobject {
+        width: 90%;
+        height: 100%;
+    }
+}*/
 			
 
 /* Table */
