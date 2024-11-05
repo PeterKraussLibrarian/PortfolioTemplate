@@ -2405,14 +2405,31 @@ input, select, textarea {
     }
     .pdf-wrapper .pdfobject {
         width: 60%; /* Wider for large screens */
-        height: 700px; /* Keeps height consistent
+        height: 700px; /* Keeps height consistent */
     }
 }
+ 	.pdfobject.fit {
+		display: block;
+		margin: 0 0 3em 0;
+		width: 100%;
+	}
 
-/* Tablet (iPad) styling */
+		.pdfobject.fit  img {
+			width: 100%;
+		}
+
+		@media screen and (max-width: 736px) {
+			.pdfobject.fit {
+				margin: 0 0 2em 0;
+			}
+		}
+
+				
+
+/* Tablet (iPad) styling 
 @media (min-width: 768px) and (max-width: 1024px) {
     .pdf-wrapper {
-        max-height: 1024px; /* Changed from 600 to 1024*/
+        max-height: 1024px; /* Changed from 600 to 1024
     }
     .pdf-wrapper .pdfobject {
         width: 60%;
@@ -2420,16 +2437,16 @@ input, select, textarea {
     }
 } */
  
-/* Mobile styling */
+/* Mobile styling 
 @media (max-width: 767px) {
     .pdf-wrapper {
         max-height: 400px;
     }
     .pdf-wrapper .pdfobject {
-        width: 100%; /*Changed from 90 to 100*/
+        width: 100%; /*Changed from 90 to 100
         height: 100%;
     }
-}*/
+}
 			
 
 /* Table */
