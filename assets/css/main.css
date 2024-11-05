@@ -2638,7 +2638,7 @@ input, select, textarea {
 
 				.tiles article > .image:after {
 					display: none;
-					/* pointer-events: none;
+					pointer-events: none;
 					-moz-transition: opacity 0.5s ease;
 					-webkit-transition: opacity 0.5s ease;
 					-ms-transition: opacity 0.5s ease;
@@ -2655,7 +2655,7 @@ input, select, textarea {
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
 					opacity: 0.25;
-					z-index: 2; */
+					z-index: 2;
 				}
 
 			.tiles article > a {
