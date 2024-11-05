@@ -2381,6 +2381,10 @@ input, select, textarea {
 					margin: 0 0 2em 0;
 				}
 
+				.image.main img {
+					width: 100%;
+				}
+
 			}
 
 
