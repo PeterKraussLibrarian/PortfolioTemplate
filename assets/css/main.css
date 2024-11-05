@@ -2389,43 +2389,47 @@ input, select, textarea {
 		justify-content: center;
 		align-items: center;
 		width: 100%;
+		max-width: 90%; /* Added this*/
+		margin: 0 auto;/* Added this*/
+		padding: 10px; /* Added this*/
 		/* height: 100vh; */
-		max-height: 1024px; /* Limits height for larger screens changed from 700 to 1024*/
+		/*max-height: 1024px; /* Limits height for larger screens changed from 700 to 1024*/
 	}
 			
 	.pdf-wrapper .pdfobject {
-		width: 80%; /* Set to 100% width, scaled to fit smaller screens */
-		height: 100%;
+		width: 100%; /* Set to 100% width, scaled to fit smaller screens */
+		height: auto;
 	}
 			
 	/* Larger screen (desktop) styling */
 @media (min-width: 1024px) {
     .pdf-wrapper {
-        max-height: 800px; /* Changed from 800 to 10000*/
+        max-height: 900px; /* Changed from 800 to 10000*/
     }
     .pdf-wrapper .pdfobject {
-        width: 60%; /* Wider for large screens */
-        height: 700px; /* Keeps height consistent
+       /* width: 60%; /* Wider for large screens */
+        height: 800px; /* Keeps height consistent
     }
 }
 
 /* Tablet (iPad) styling */
 @media (min-width: 768px) and (max-width: 1024px) {
     .pdf-wrapper {
-        max-height: 1024px; /* Changed from 600 to 1024*/
+        max-height: 700px; /* Changed from 600 to 1024*/
     }
-    .pdf-wrapper .pdfobject {
+   /* .pdf-wrapper .pdfobject { */
+   .pdfobject {
         width: 60%;
         height: 100%; 
     }
-} */
+}
  
 /* Mobile styling */
 @media (max-width: 767px) {
     .pdf-wrapper {
         max-height: 400px;
     }
-    .pdf-wrapper .pdfobject {
+    .pdfobject {
         width: 100%; /*Changed from 90 to 100*/
         height: 100%;
     }
