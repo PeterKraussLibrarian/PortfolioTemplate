@@ -2405,14 +2405,14 @@ input, select, textarea {
     }
     .pdf-wrapper .pdfobject {
         width: 60%; /* Wider for large screens */
-        height: 700px; /* Keeps height consistent */
+        height: 1024px; /* Keeps height consistent Changed from 700 to 1024*/ 
     }
 }
 
 /* Tablet (iPad) styling */
 @media (min-width: 768px) and (max-width: 1024px) {
     .pdf-wrapper {
-        max-height: 600px;
+        max-height: 1000px; /* Changed from 600 to 1000*/
     }
     .pdf-wrapper .pdfobject {
         width: 90%;
@@ -2426,7 +2426,7 @@ input, select, textarea {
         max-height: 400px;
     }
     .pdf-wrapper .pdfobject {
-        width: 95%;
+        width: 100%; /*Changed from 90 to 100*/
         height: 100%;
     }
 }*/
