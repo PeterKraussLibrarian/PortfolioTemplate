@@ -2390,7 +2390,7 @@ input, select, textarea {
 		align-items: center;
 		width: 100%;
 		height: 100vh; /* Full viewport height */
-		max-height: 700px; /* Limits height for larger screens */
+		max-height: 1024px; /* Limits height for larger screens changed from 700 to 1024*/
 	}
 			
 	.pdf-wrapper .pdfobject {
@@ -2405,14 +2405,14 @@ input, select, textarea {
     }
     .pdf-wrapper .pdfobject {
         width: 60%; /* Wider for large screens */
-        height: 1024px; /* Keeps height consistent Changed from 700 to 1024*/ 
+        height: 2064px; /* Keeps height consistent Changed from 700 to 1024*/ 
     }
 }
 
 /* Tablet (iPad) styling */
 @media (min-width: 768px) and (max-width: 1024px) {
     .pdf-wrapper {
-        max-height: 1000px; /* Changed from 600 to 1000*/
+        max-height: 2064px; /* Changed from 600 to 2064*/
     }
     .pdf-wrapper .pdfobject {
         width: 90%;
