@@ -2401,7 +2401,7 @@ input, select, textarea {
 	/* Larger screen (desktop) styling */
 @media (min-width: 1024px) {
     .pdf-wrapper {
-        max-height: 800px;
+        max-height: 1000px; /* Changed from 800 to 100*/
     }
     .pdf-wrapper .pdfobject {
         width: 60%; /* Wider for large screens */
