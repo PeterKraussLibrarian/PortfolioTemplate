@@ -2574,7 +2574,6 @@ input, select, textarea {
 			opacity: 0.25;
 		}
 
-
 /* Tiles */
 
 	.tiles {
@@ -2713,7 +2712,7 @@ input, select, textarea {
 					max-height: 0;
 					line-height: 1.5;
 					margin-top: 0.35em;
-					opacity: 1; /*Changed from 1 to 0*/
+					opacity: 0; /*Changed from 1 to 0*/
 				}
 
 					.tiles article > a .content > :last-child {
