@@ -2659,7 +2659,8 @@ input, select, textarea {
 				}
 
 			.tiles article > a {
-				display: -moz-flex;
+				display: none;
+			/*	display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
 				display: flex;
