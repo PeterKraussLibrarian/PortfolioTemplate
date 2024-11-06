@@ -2601,8 +2601,7 @@ input, select, textarea {
 		}
 
 			.tiles article > .image {
-				display: none;
-				/* -moz-transition: -moz-transform 0.5s ease;
+				-moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
@@ -2611,7 +2610,7 @@ input, select, textarea {
 				width: 100%;
 				border-radius: 4px;
 				overflow: hidden;
-			} */
+			}
 
 				.tiles article > .image img {
 					display: block;
@@ -2620,7 +2619,7 @@ input, select, textarea {
 
 				.tiles article > .image:before {
 					display: none;
-					/*pointer-events: none;
+					pointer-events: none;
 					-moz-transition: background-color 0.5s ease, opacity 0.5s ease;
 					-webkit-transition: background-color 0.5s ease, opacity 0.5s ease;
 					-ms-transition: background-color 0.5s ease, opacity 0.5s ease;
@@ -2639,7 +2638,7 @@ input, select, textarea {
 
 				.tiles article > .image:after {
 					display: none;
-					/* pointer-events: none;
+					pointer-events: none;
 					-moz-transition: opacity 0.5s ease;
 					-webkit-transition: opacity 0.5s ease;
 					-ms-transition: opacity 0.5s ease;
@@ -2783,7 +2782,7 @@ input, select, textarea {
 
 		body.is-touch .tiles article .content {
 			max-height: 15em;
-			opacity: 1;
+			opacity: 0; /*changed from 1 to 0*/
 		}
 
 		@media screen and (max-width: 1280px) {
