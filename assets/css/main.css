@@ -2811,11 +2811,6 @@ input, select, textarea {
 
 		}
 
-		.tiles article > .image:before,
-		.tiles article > .image:after {
-			display: none; /* Completely hide pseudo-elements */
-		}
-
 
 /* Header */
 
