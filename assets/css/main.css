@@ -2753,11 +2753,11 @@ input, select, textarea {
 
 				body:not(.is-touch) .tiles article:hover > .image:before {
 					background-color: #333333;
-					opacity: 0; /* changed from 0.35 to 0 */
+					opacity: .35; /* changed from 0.35 to 0 */
 				}
 
 				body:not(.is-touch) .tiles article:hover > .image:after {
-					opacity: 0;
+					opacity: .35; /* changed from0 to 0.35 to 0 */
 				}
 
 			body:not(.is-touch) .tiles article:hover .content {
