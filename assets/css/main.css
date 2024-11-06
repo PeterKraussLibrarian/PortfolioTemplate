@@ -2713,7 +2713,7 @@ input, select, textarea {
 					max-height: 0;
 					line-height: 1.5;
 					margin-top: 0.35em;
-					opacity: 0; /*Changed from 1 to 0*/
+					opacity: 1; /*Changed from 1 to 0*/
 				}
 
 					.tiles article > a .content > :last-child {
@@ -2762,7 +2762,7 @@ input, select, textarea {
 
 			body:not(.is-touch) .tiles article:hover .content {
 				max-height: 15em;
-				opacity: 1;
+				opacity: 0; /*Changded from 1 to 0*/
 			} 
 
 		* +	.tiles {
