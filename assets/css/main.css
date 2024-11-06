@@ -2601,7 +2601,8 @@ input, select, textarea {
 		}
 
 			.tiles article > .image {
-				-moz-transition: -moz-transform 0.5s ease;
+				display: none;
+				/* -moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
@@ -2610,7 +2611,7 @@ input, select, textarea {
 				width: 100%;
 				border-radius: 4px;
 				overflow: hidden;
-			}
+			} */
 
 				.tiles article > .image img {
 					display: block;
@@ -2660,7 +2661,7 @@ input, select, textarea {
 
 			.tiles article > a {
 				display: none;
-			/*	display: -moz-flex;
+				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
 				display: flex;
