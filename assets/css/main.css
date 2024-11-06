@@ -2675,7 +2675,7 @@ input, select, textarea {
 				}
 
 				.tiles article > a .content {
-					display: none;
+					display: block;
 					-moz-transition: max-height 0.5s ease, opacity 0.5s ease;
 					-webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
 					-ms-transition: max-height 0.5s ease, opacity 0.5s ease;
