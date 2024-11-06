@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<!-- Resume -->
+<html>
+	<head>
+		<title>Resume</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="images/BookLogoSingle.png"  />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="center" style="text-align: center;">
+
+							<!-- Logo -->
+                            <a href="index.html" class="logo"> <!--Took the reference to index.html out-->
+                                <span class="symbol"><img src="images/BookLogoSingle.png" alt="" /></span>
+                            	<span class="title">PETER KRAUSS: EPORTFOLIO</span>
+                            </a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Collection</h2>
+						<ul>
+							<li><a href="index.html">Back to the Bookshelf</a></li>
+							<li><a href="generic.html">A Letter to a Potential Employer</a></li>
+							<li><a href="narrative.html">Narrative</a></li>
+							<li><a href="ResumePage">Resume</a></li>
+							<li><a href="generic.html">Leadership and Innovation</a></li>
+							<li><a href="generic.html">Systems and Services</a></li>
+							<li><a href="generic.html">Knowledge Representation</a></li>
+							<li><a href="generic.html">Theory and Practice</a></li>
+							<li><a href="generic.html">Co-Curricular</a></li>
+							<li><a href="generic.html">Other 1</a></li>
+							<li><a href="generic.html">Other 2</a></li>
+							<li><a href="generic.html">Generic</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<!-- <h1>Resume!</h1> -->
+							<!-- <span class="image main"><img src="images/ResumePic.jpg" alt="" /></span> -->
+							
+							<div id="pdf-embed" style="display: flex; justify-content: center; align-items: center; max-height: 2064px; height: 100vh;"> <!-- Changed from 1024 to 2064-->
+								<embed src="Peter Krauss MLIS 2024 Resume.pdf" type="application/pdf" style="width: 100%; max-width: 1536px; height: 100%; object-fit: contain;"> <!-- Changed from 768 to 1536-->
+							</div>
+							
+							<!-- Fallback for unsupported browsers -->
+							<div style="text-align: center; padding: 4px;">
+								<p>If you cannot properly view my resume, <a href="Peter Krauss MLIS 2024 Resume.pdf" download>download the PDF here</a>.</p>
+							</div>
+
+							
+							<!-- Mobile and Tablet-specific CSS -->
+							<style>
+								@media (max-width: 768px) {
+									#pdf-embed {
+										height: 100vh;
+										padding: 0;
+									}
+									#pdf-embed embed {
+										width: 100%;
+										height: auto;
+										max-height: 100vh;
+										object-fit: contain;
+									}
+								}
+								
+								/* For tablets in landscape */
+								@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+									#pdf-embed {
+										height: 100vh; /* Slightly less than full height for breathing room */
+									}
+									#pdf-embed embed {
+										width: 100%;
+										height: 100%;
+									}
+								}
+							</style> 
+
+						</div>
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner"> 
+						<section>
+							<h3 class="inner" style="text-align: left;">Contact</h3>
+							<ul class="icons">
+								<li><a href="tel:+12692759674" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+								<li><a href="mailto:peterkrausslibrarian@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://www.linkedin.com/in/peter-krauss/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</section>
+						<ul class="copyright">
+							<li> <strong>Statement of Integrity:</strong> All artifacts, reflections, narratives, and examples are mine alone (except where indicated as a group or team project), and has been prepared solely by me. I am protecting the privacy of the contents of my ePortfolio by password protecting it, submitting it through Canvas, or by sharing the URL only with my advisor. Any publicly accessible pages have been deliberately designed and approved by me and by my advisor so that they may be used for potential job search or other public access to my professional portfolio or web page. Before making my ePortfolio public, I will respect the privacy of others by modifying or removing information that could lead to the identity of individuals (team members in group projects, internship supervisors, interviewees, etc.) and institutions.</li> <br><br>
+							&copy; Peter Krauss. All rights reserved.
+							<li> 
+						</ul>
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
