@@ -2726,7 +2726,7 @@ input, select, textarea {
 				}
 
 				body:not(.is-touch) .tiles article:hover > .image:after {
-					opacity: 0; /* changed from0 to 0.35 to 0 */
+					opacity: 0; 
 				}
 
 			body:not(.is-touch) .tiles article:hover .content {
@@ -2734,7 +2734,7 @@ input, select, textarea {
 				opacity: 1;
 			} 
 
-		.tiles {
+		* +	.tiles {
 			margin-top: 2em;
 		}
 
