@@ -2585,7 +2585,9 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
+		align-items: flex-end; /*align on bottom of shelf?*/
 		position: relative;
+		padding-bottom: 2.5em; /*Added to create "Shelf"?*/
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -2752,7 +2754,7 @@ input, select, textarea {
 
 				body:not(.is-touch) .tiles article:hover > .image:before {
 					background-color: #333333;
-					opacity: 0.35;
+					opacity: 0; /*Changed from 0.35 to 0*/
 				}
 
 				body:not(.is-touch) .tiles article:hover > .image:after {
