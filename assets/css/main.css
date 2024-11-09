@@ -209,8 +209,12 @@ input, select, textarea {
 	}
 
 
-		h2 a, h3 a, h4 a, h5 a, h6 a {
+		h2 a, h3 a, h4 a, h5 a{
 			color: inherit;
+		}
+
+		h6 a {
+			color: transparent
 		}
 
 	h2 {
@@ -237,7 +241,12 @@ input, select, textarea {
 	}
 
 	h6 {
-		font-size: 0.8em;
+		font-size: 0.1em;
+		text-align:center;
+		font-weight: 0;
+		line-height: 0;
+		margin: 0 0 0 0;
+		letter-spacing: 0em;
 	}
 
 	@media screen and (max-width: 980px) {
