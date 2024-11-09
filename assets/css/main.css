@@ -230,9 +230,10 @@ input, select, textarea {
 		font-size: 1em;
 		text-align:center;
 		font-weight: 900;
-		line-height: 1;
+		line-height: 1.5;
 		margin: 0 0 2em 0;
 		text-transform: uppercase;
+		letter-spacing: 0.05em;
 	}
 
 	h6 {
