@@ -233,7 +233,7 @@ input, select, textarea {
 		line-height: 1.5;
 		margin: 0 0 2em 0;
 		text-transform: uppercase;
-		letter-spacing: 0.05em;
+		letter-spacing: 0.1em;
 	}
 
 	h6 {
