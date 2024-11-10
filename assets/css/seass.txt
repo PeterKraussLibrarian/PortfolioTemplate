@@ -119,51 +119,42 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #585858;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 2vw;
+		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.75;
 	}
 
-		/* Adjust font size for smaller screens */
 		@media screen and (max-width: 1680px) {
+
 			body, input, select, textarea {
-				font-size: 2.5vw;
+				font-size: 14pt;
 			}
+
 		}
 
 		@media screen and (max-width: 1280px) {
+
 			body, input, select, textarea {
-				font-size: 2.5vw;
+				font-size: 12pt;
 			}
+
 		}
 
-		@media screen and (max-width: 736px) {
-			body, input, select, textarea {
-				font-size: 4vw; /* Further reduction for mobile */
-			}
-		}
-		
-			/* Max font-size to prevent overflow on larger screens */
-		@media screen and (min-width: 1920px) {
-    		body, input, select, textarea {
-        		font-size: 18pt; /* Prevent font from growing too large on big screens */
-   			}
-		}
-
-	/* Link styles */
 	a {
+		-moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+		-webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
 		color: #585858;
 		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
-		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 	}
 
-	a:hover {
-		border-bottom-color: transparent;
-		color: #5b92e5 !important;
-	}
+		a:hover {
+			border-bottom-color: transparent;
+			color: #f2849e !important;
+		}
 
-	/* Emphasis and strong styles */
 	strong, b {
 		font-weight: 900;
 	}
@@ -172,7 +163,6 @@ input, select, textarea {
 		font-style: italic;
 	}
 
-	/* Paragraph styles */
 	p {
 		margin: 0 0 2em 0;
 	}
@@ -181,7 +171,6 @@ input, select, textarea {
 	h1 {
 		text-align: center;
 		margin: 0 0 2em 0;
-		font-size: 4vw; /* Increase base size for readability */
 	}
 
 	h1 a {
@@ -2351,7 +2340,7 @@ input, select, textarea {
 	.image {
 		border-radius: 4px;
 		border: 0;
-		display: inline-block; /*changed from inline-block to flex*/
+		display: inline-block;
 		align-items: flex-end;/* Added this line */
 		position: relative;
 	}
