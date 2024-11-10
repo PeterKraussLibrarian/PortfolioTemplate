@@ -195,7 +195,7 @@ input, select, textarea {
 
 		}
 
-	h2, {
+	h2 {
 		text-align:center;
 		font-weight: 900;
 		line-height: 1.5;
@@ -234,11 +234,11 @@ input, select, textarea {
 	}
 
 
-		h3 a, h4 a, h5 a{
+		h2 a, h3 a, h4 a, h5 a{
 			color: inherit;
 		}
 
-		h2 a, h6 a {
+		h6 a {
 			color: transparent !important;
 		}
 
