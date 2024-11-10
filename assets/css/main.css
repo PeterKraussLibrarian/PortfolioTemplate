@@ -112,8 +112,10 @@ input, select, textarea {
 			transition: none !important;
 		}
 
+
 /* Type */
 
+	/* Base font styles */
 	body, input, select, textarea {
 		color: #585858;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -122,37 +124,39 @@ input, select, textarea {
 		line-height: 1.75;
 	}
 
+		/* Adjust font size for smaller screens */
 		@media screen and (max-width: 1680px) {
-
 			body, input, select, textarea {
 				font-size: 14pt;
 			}
-
 		}
 
 		@media screen and (max-width: 1280px) {
-
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
-
 		}
 
+		@media screen and (max-width: 736px) {
+			body, input, select, textarea {
+				font-size: 10pt; /* Further reduction for mobile */
+			}
+		}
+
+	/* Link styles */
 	a {
-		-moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-		-webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
 		color: #585858;
 		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
+		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 	}
 
-		a:hover {
-			border-bottom-color: transparent;
-			color: #5b92e5 !important;
-		}
+	a:hover {
+		border-bottom-color: transparent;
+		color: #5b92e5 !important;
+	}
 
+	/* Emphasis and strong styles */
 	strong, b {
 		font-weight: 900;
 	}
@@ -161,79 +165,66 @@ input, select, textarea {
 		font-style: italic;
 	}
 
+	/* Paragraph styles */
 	p {
 		margin: 0 0 2em 0;
 	}
 
-	/*h1 has been changed*/
+	/* Heading 1 */
 	h1 {
-		text-align:center;
+		text-align: center;
 		margin: 0 0 2em 0;
-		font-size: 1em;
+		font-size: 2em; /* Increase base size for readability */
 	}
 
-		h1 a {
-			color: inherit;
-		}
-		
-		@media screen and (max-width: 736px) {
+	h1 a {
+		color: inherit;
+	}
 
+		/* Adjust h1 for smaller screens */
+		@media screen and (max-width: 736px) {
 			h1 {
-				font-size: .8em;
+				font-size: 1.5em;
 				margin: 0 0 1em 0;
 			}
 		}
 
-			@media screen and (max-width: 360px) {
-				h1 {
-					font-size: .8em;
-				}
+		@media screen and (max-width: 360px) {
+			h1 {
+				font-size: 1.2em;
 			}
+		}
 
+	/* Heading 2, 3, 4, 5, 6 */
+	h2, h3, h4, h5, h6 {
+		text-align: center;
+		margin: 0 0 2em 0;
+	}
 
 	h2, h3 {
-		text-align:center;
 		font-weight: 900;
 		line-height: 1.5;
-		margin: 0 0 2em 0;
 		text-transform: uppercase;
 		letter-spacing: 0.35em;
 	}
 
-	h4 {
-		text-align:center;
-		margin: 0 0 2em 0;
-		font-size: 1em;
-	}
-
 	h5 {
-		text-align:center;
-		font-weight: 900;
-		line-height: 1.5;
-		margin: 0 0 2em 0;
-		text-transform: uppercase;
 		letter-spacing: 0.3em;
 	}
 
 	h6 {
-		text-align:center;
-		margin: 0 0 2em 0;
+		font-weight: normal;
+		font-size: 1em;
+		letter-spacing: normal;
 	}
 
-		h2 a, h3 a, h4 a, h5 a {
-			color: inherit;
-		}
-
-		h6 a {
-			color: transparent !important;
-		}
-
+	/* Specific sizes for headings */
 	h2 {
-		font-size: 1em;
+		font-size: 1.2em;
 	}
 
 	h3 {
-		font-size: 1em;
+		font-size: 1.1em;
 	}
 
 	h4 {
@@ -245,40 +236,36 @@ input, select, textarea {
 	}
 
 	h6 {
-		font-size: 0.1em;
-		text-align:center;
-		font-weight: 0;
-		line-height: 0;
-		margin: 0 0 0 0;
-		letter-spacing: 0em;
+		font-size: 1em;
 	}
 
-	@media screen and (max-width: 980px) {
-
-		h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
-			display: none;
-		}
-
+	/* Link styles for headings */
+	h2 a, h3 a, h4 a, h5 a {
+		color: inherit;
 	}
 
-	@media screen and (max-width: 736px) {
-
-		h2 {
-			font-size: 0.8em;
-		}
-
-		h3 {
-			font-size: 0.8em;
-		}
-		h4 {
-			font-size: 0.8em;
-		}
-
-		h5 {
-			font-size: 0.8em;
-		}
-
+	h6 a {
+		color: transparent !important;
 	}
+
+	/* Adjust heading sizes on smaller screens */
+		@media screen and (max-width: 980px) {
+			h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
+				display: none; /* Remove breaks */
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			h2, h3, h4, h5 {
+				font-size: 0.9em; /* Reduce font size for smaller devices */
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			h2, h3, h4, h5 {
+				font-size: 0.8em; /* Further reduction for mobile */
+			}
+		}
 
 	sub {
 		font-size: 0.8em;
