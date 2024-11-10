@@ -3,6 +3,7 @@
 
 /*
 	Phantom by HTML5 UP
+	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
@@ -112,58 +113,47 @@ input, select, textarea {
 			transition: none !important;
 		}
 
-
 /* Type */
 
-	/* Base font styles */
 	body, input, select, textarea {
 		color: #585858;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 2vw;
+		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.75;
 	}
 
-		/* Adjust font size for smaller screens */
 		@media screen and (max-width: 1680px) {
+
 			body, input, select, textarea {
-				font-size: 2.5vw;
+				font-size: 14pt;
 			}
+
 		}
 
 		@media screen and (max-width: 1280px) {
+
 			body, input, select, textarea {
-				font-size: 2.5vw;
+				font-size: 12pt;
 			}
+
 		}
 
-		@media screen and (max-width: 736px) {
-			body, input, select, textarea {
-				font-size: 4vw; /* Further reduction for mobile */
-			}
-		}
-		
-			/* Max font-size to prevent overflow on larger screens */
-		@media screen and (min-width: 1920px) {
-    		body, input, select, textarea {
-        		font-size: 18pt; /* Prevent font from growing too large on big screens */
-   			}
-		}
-
-	/* Link styles */
 	a {
+		-moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+		-webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
 		color: #585858;
 		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
-		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 	}
 
-	a:hover {
-		border-bottom-color: transparent;
-		color: #5b92e5 !important;
-	}
+		a:hover {
+			border-bottom-color: transparent;
+			color: #f2849e !important;
+		}
 
-	/* Emphasis and strong styles */
 	strong, b {
 		font-weight: 900;
 	}
@@ -172,107 +162,90 @@ input, select, textarea {
 		font-style: italic;
 	}
 
-	/* Paragraph styles */
 	p {
 		margin: 0 0 2em 0;
 	}
 
-	/* Heading 1 */
 	h1 {
-		text-align: center;
-		margin: 0 0 2em 0;
-		font-size: 4vw; /* Increase base size for readability */
+		font-size: 2.75em;
+		font-weight: 700;
+		line-height: 1.3;
+		margin: 0 0 1em 0;
+		letter-spacing: -0.035em;
 	}
 
-	h1 a {
-		color: inherit;
-	}
+		h1 a {
+			color: inherit;
+		}
 
-		/* Adjust h1 for smaller screens */
 		@media screen and (max-width: 736px) {
+
 			h1 {
-				font-size: 1.5em;
+				font-size: 2em;
 				margin: 0 0 1em 0;
 			}
+
 		}
 
 		@media screen and (max-width: 360px) {
+
 			h1 {
-				font-size: 1.2em;
+				font-size: 1.75em;
 			}
+
 		}
 
-	/* Heading 2, 3, 4, 5, 6 */
 	h2, h3, h4, h5, h6 {
-		text-align: center;
-		margin: 0 0 2em 0;
-	}
-
-	h2, h3 {
 		font-weight: 900;
 		line-height: 1.5;
+		margin: 0 0 2em 0;
 		text-transform: uppercase;
 		letter-spacing: 0.35em;
 	}
 
-	h5 {
-		letter-spacing: 0.3em;
-	}
+		h2 a, h3 a, h4 a, h5 a, h6 a {
+			color: inherit;
+		}
 
-	h6 {
-		font-weight: normal;
-		font-size: 1em;
-		letter-spacing: normal;
-	}
-
-	/* Other heading sizes */
 	h2 {
-		font-size: 3vw; /* Relative to viewport width */
+		font-size: 1.1em;
 	}
 
 	h3 {
-		font-size: 2.5vw;
+		font-size: 1em;
 	}
 
 	h4 {
-		font-size: 2.2vw;
+		font-size: 0.8em;
 	}
 
 	h5 {
-		font-size: 2vw;
+		font-size: 0.8em;
 	}
 
 	h6 {
-		font-size: 1.8vw;
+		font-size: 0.8em;
 	}
 
-	/* Link styles for headings */
-	h2 a, h3 a, h4 a, h5 a {
-		color: inherit;
+	@media screen and (max-width: 980px) {
+
+		h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
+			display: none;
+		}
+
 	}
 
-	h6 a {
-		color: transparent !important;
+	@media screen and (max-width: 736px) {
+
+		h2 {
+			font-size: 1em;
+		}
+
+		h3 {
+			font-size: 0.8em;
+		}
+
 	}
-
-	/* Adjust heading sizes on smaller screens */
-		@media screen and (max-width: 980px) {
-			h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
-				display: none; /* Remove breaks */
-			}
-		}
-
-		@media screen and (max-width: 736px) {
-			h2, h3, h4, h5 {
-				font-size: 2.5vw; /* Reduce font size for smaller devices */
-			}
-		}
-
-		@media screen and (max-width: 480px) {
-			h2, h3, h4, h5 {
-				font-size: 4vw; /* Further reduction for mobile */
-			}
-		}
 
 	sub {
 		font-size: 0.8em;
@@ -286,14 +259,12 @@ input, select, textarea {
 		top: -0.5em;
 	}
 
-	 blockquote {
-		display: inline-block;
-		line-height: 1;
+	blockquote {
 		border-left: solid 4px #c9c9c9;
 		font-style: italic;
 		margin: 0 0 2em 0;
 		padding: 0.5em 0 0.5em 2em;
-	} 
+	}
 
 	code {
 		background: rgba(144, 144, 144, 0.075);
@@ -347,9 +318,7 @@ input, select, textarea {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-		align-items: flex-end; /*added this*/
-		/* align-items: stretch; */
-
+		align-items: stretch;
 	}
 
 		.row > * {
@@ -358,7 +327,6 @@ input, select, textarea {
 
 		.row.gtr-uniform > * > :last-child {
 			margin-bottom: 0;
-			align-items: flex-end; /*added this*/
 		}
 
 		.row.aln-left {
@@ -593,8 +561,7 @@ input, select, textarea {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				/* align-items: stretch; */
-				align-items: flex-end; /*added this*/
+				align-items: stretch;
 			}
 
 				.row > * {
@@ -839,8 +806,7 @@ input, select, textarea {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				align-items: flex-end; /*added this*/
-				/* align-items: stretch; */
+				align-items: stretch;
 			}
 
 				.row > * {
@@ -1085,8 +1051,7 @@ input, select, textarea {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				align-items: flex-end; /*added this*/
-				/* align-items: stretch; */
+				align-items: stretch;
 			}
 
 				.row > * {
@@ -1331,8 +1296,7 @@ input, select, textarea {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				align-items: flex-end; /*added this*/
-				/*align-items: stretch;*/
+				align-items: stretch;
 			}
 
 				.row > * {
@@ -1577,8 +1541,7 @@ input, select, textarea {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				/* align-items: stretch; */
-				align-items: flex-end; /*added this*/
+				align-items: stretch;
 			}
 
 				.row > * {
@@ -1893,8 +1856,8 @@ input, select, textarea {
 			}
 
 			.icon.style2:hover {
-				color: #5b92e5;
-				border-color: #5b92e5;
+				color: #f2849e;
+				border-color: #f2849e;
 			}
 
 			.icon.style2:active {
@@ -1904,7 +1867,7 @@ input, select, textarea {
 /* List */
 
 	ol {
-		list-style: decimal; /*changed this to from decimal*/
+		list-style: decimal;
 		margin: 0 0 2em 0;
 		padding-left: 1.25em;
 	}
@@ -1914,13 +1877,12 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: square; /*changed this to from disc*/
+		list-style: disc;
 		margin: 0 0 2em 0;
 		padding-left: 1em;
 	}
 
 		ul li {
-			/*list-style: none; */ /*Added this*/
 			padding-left: 0.5em;
 		}
 
@@ -2208,8 +2170,8 @@ input, select, textarea {
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-bottom-color: #5b92e5;
-			box-shadow: inset 0 -1px 0 0 #5b92e5;
+			border-bottom-color: #f2849e;
+			box-shadow: inset 0 -1px 0 0 #f2849e;
 		}
 
 	select {
@@ -2313,8 +2275,8 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #5b92e5;
-			box-shadow: 0 0 0 1px #5b92e5;
+			border-color: #f2849e;
+			box-shadow: 0 0 0 1px #f2849e;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2351,8 +2313,7 @@ input, select, textarea {
 	.image {
 		border-radius: 4px;
 		border: 0;
-		display: inline-block; /*changed from inline-block to flex*/
-		align-items: flex-end;/* Added this line */
+		display: inline-block;
 		position: relative;
 	}
 
@@ -2533,8 +2494,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			color: #5b92e5 !important;
-			box-shadow: inset 0 0 0 2px #5b92e5;
+			color: #f2849e !important;
+			box-shadow: inset 0 0 0 2px #f2849e;
 		}
 
 		input[type="submit"]:active,
@@ -2576,7 +2537,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #5b92e5;
+				background-color: #f2849e;
 			}
 
 			input[type="submit"].primary:active,
@@ -2611,9 +2572,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		align-items: flex-end; /*align on bottom of shelf?*/
-		position: relative;
-		padding-bottom: 2.5em; /*Added to create "Shelf"?*/
+		postiion: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -2632,7 +2591,7 @@ input, select, textarea {
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
-				position: relative; /*Changed from relative to bottom*/
+				position: relative;
 				display: block;
 				width: 100%;
 				border-radius: 4px;
@@ -2640,7 +2599,7 @@ input, select, textarea {
 			}
 
 				.tiles article > .image img {
-					display: block; 
+					display: block;
 					width: 100%;
 				}
 
@@ -2659,7 +2618,7 @@ input, select, textarea {
 					height: 100%;
 					opacity: 1.0;
 					z-index: 1;
-					opacity: 0.8; /*Changed from 0.8 to 0.0*/
+					opacity: 0.8;
 				}
 
 				.tiles article > .image:after {
@@ -2675,11 +2634,11 @@ input, select, textarea {
 					left: 0;
 					width: 100%;
 					height: 100%;
-					background-image: none;
+					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
 					background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
-					opacity: 0.25; /*Changed from 0.25 to 0*/
+					opacity: 0.25;
 					z-index: 2;
 				}
 
@@ -2715,7 +2674,7 @@ input, select, textarea {
 				color: #ffffff;
 				text-align: center;
 				text-decoration: none;
-				z-index: 3; 
+				z-index: 3;
 			}
 
 				.tiles article > a > :last-child {
@@ -2726,10 +2685,9 @@ input, select, textarea {
 					color: #ffffff !important;
 				}
 
-				/* .tiles article > a h2 {
-					text-align: center;
+				.tiles article > a h2 {
 					margin: 0;
-				} */
+				}
 
 				.tiles article > a .content {
 					-moz-transition: max-height 0.5s ease, opacity 0.5s ease;
@@ -2740,7 +2698,7 @@ input, select, textarea {
 					max-height: 0;
 					line-height: 1.5;
 					margin-top: 0.35em;
-					opacity: 0; /*Changed from 1 to 0*/
+					opacity: 0;
 				}
 
 					.tiles article > a .content > :last-child {
@@ -2748,7 +2706,7 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #5b92e5;
+				background-color: #f2849e;
 			}
 
 			.tiles article.style2 > .image:before {
@@ -2769,30 +2727,30 @@ input, select, textarea {
 
 			.tiles article.style6 > .image:before {
 				background-color: #8499e7;
-			} 
+			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
 				-moz-transform: scale(1.1);
 				-webkit-transform: scale(1.1);
 				-ms-transform: scale(1.1);
-				transform: scale(1.1); 
+				transform: scale(1.1);
 			}
 
 				body:not(.is-touch) .tiles article:hover > .image:before {
 					background-color: #333333;
-					opacity: .35; /*Changed from 0.35 to 0*/
+					opacity: 0.35;
 				}
 
 				body:not(.is-touch) .tiles article:hover > .image:after {
-					opacity: 0; 
+					opacity: 0;
 				}
 
 			body:not(.is-touch) .tiles article:hover .content {
 				max-height: 15em;
-				opacity: 1; /*Changded from 1 to 0*/
-			} 
+				opacity: 1;
+			}
 
-		* +	.tiles {
+		* + .tiles {
 			margin-top: 2em;
 		}
 
@@ -2801,12 +2759,12 @@ input, select, textarea {
 			-webkit-transform: scale(0.9);
 			-ms-transform: scale(0.9);
 			transform: scale(0.9);
-			opacity: 0; /*Changded from 1 to 0*/
+			opacity: 0;
 		}
 
 		body.is-touch .tiles article .content {
 			max-height: 15em;
-			opacity: 0; /*Changded from 1 to 0*/
+			opacity: 1;
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -2847,11 +2805,10 @@ input, select, textarea {
 				}
 
 					.tiles article:hover > .image {
-						display: none;
 						-moz-transform: scale(1.0);
 						-webkit-transform: scale(1.0);
 						-ms-transform: scale(1.0);
-						transform: scale(1.0); 
+						transform: scale(1.0);
 					}
 
 		}
@@ -2868,7 +2825,6 @@ input, select, textarea {
 				}
 
 		}
-
 
 /* Header */
 
@@ -2972,7 +2928,7 @@ input, select, textarea {
 						}
 
 						#header nav ul li a[href="#menu"]:before {
-							background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %235b92e5%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
+							background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
 							opacity: 0;
 						}
 
@@ -3122,7 +3078,7 @@ input, select, textarea {
 			}
 
 			#menu > .close:before {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %235b92e5%3B %7D%3C/style%3E%3Cline x1='15' y1='15' x2='85' y2='85' /%3E%3Cline x1='85' y1='15' x2='15' y2='85' /%3E%3C/svg%3E");
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='15' y1='15' x2='85' y2='85' /%3E%3Cline x1='85' y1='15' x2='15' y2='85' /%3E%3C/svg%3E");
 				opacity: 0;
 			}
 
@@ -3206,12 +3162,11 @@ input, select, textarea {
 
 		}
 
-/* Footer COMMENTS MEAN I've adjusted parts */
+/* Footer */
 
 	#footer {
-		/*padding: 5em 0 6em 0 ; */
-		padding: 2em 0 3em 0 ;
-		background-color:transparent; /*changed to transparent*/
+		padding: 5em 0 6em 0 ;
+		background-color: #f6f6f6;
 	}
 
 		#footer > .inner {
@@ -3246,8 +3201,7 @@ input, select, textarea {
 			#footer > .inner .copyright {
 				width: 100%;
 				padding: 0;
-				/* margin-top: 5em; */
-				margin-top: 3em;
+				margin-top: 5em;
 				list-style: none;
 				font-size: 0.8em;
 				color: rgba(88, 88, 88, 0.5);
@@ -3274,8 +3228,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#footer {
-				/* padding: 5em 0 3em 0 ; */
-				padding: 2em 0 1em 0 ;
+				padding: 5em 0 3em 0 ;
 			}
 
 				#footer > .inner section:nth-child(1) {
@@ -3307,8 +3260,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#footer {
-				/* padding: 3em 0 1em 0 ; */
-				padding: 1em 0 0em 0 ;
+				padding: 3em 0 1em 0 ;
 			}
 
 				#footer > .inner {
@@ -3334,8 +3286,7 @@ input, select, textarea {
 					}
 
 					#footer > .inner .copyright {
-						/* margin-top: 3em; */
-						margin-top: 1em;
+						margin-top: 3em;
 					}
 
 		}
@@ -3343,8 +3294,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			#footer > .inner .copyright {
-				/* margin-top: 3em; */
-				margin-top: 1em;
+				margin-top: 3em;
 			}
 
 				#footer > .inner .copyright li {
@@ -3362,31 +3312,18 @@ input, select, textarea {
 		}
 
 /* Wrapper */
+
 	#wrapper > * > .inner {
 		width: 100%;
-		max-width: none; /* This is fine for smaller screens, but might need adjustments for larger ones */
+		max-width: 68em;
 		margin: 0 auto;
 		padding: 0 2.5em;
 	}
-	
-	/* For larger screens, decrease the padding */
-	@media screen and (min-width: 1200px) {
-		#wrapper > * > .inner {
-		padding: 0 5em; /* Adjust padding to suit larger screens */
+
+		@media screen and (max-width: 736px) {
+
+			#wrapper > * > .inner {
+				padding: 0 1.25em;
+			}
+
 		}
-	}
-	
-	/* For screens smaller than 736px */
-	@media screen and (max-width: 736px) {
-		#wrapper > * > .inner {
-		padding: 0 1.25em;
-		}
-	}
-	
-	/* Alternative for even larger screens */
-	@media screen and (min-width: 1600px) {
-		#wrapper > * > .inner {
-		max-width: 100%; /* Allow full width on really large screens */
-		padding: 0em; /* Adjust as necessary */
-		}
-	}
