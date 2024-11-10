@@ -3364,7 +3364,7 @@ input, select, textarea {
 /* Wrapper */
 	#wrapper > * > .inner {
 		width: 100%;
-		max-width: 68em; /* This is fine for smaller screens, but might need adjustments for larger ones */
+		max-width: none; /* This is fine for smaller screens, but might need adjustments for larger ones */
 		margin: 0 auto;
 		padding: 0 2.5em;
 	}
@@ -3387,6 +3387,6 @@ input, select, textarea {
 	@media screen and (min-width: 1600px) {
 		#wrapper > * > .inner {
 		max-width: 100%; /* Allow full width on really large screens */
-		padding: 0 10em; /* Adjust as necessary */
+		padding: 0em; /* Adjust as necessary */
 		}
 	}
