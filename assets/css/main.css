@@ -2871,20 +2871,38 @@ input, select, textarea {
 			display: inline-block;
 		}
 
-			#header .logo > * {
-				display: inline-block;
-				vertical-align: middle;
-			}
+			/* General styles for the logo */
+		#header .logo > * {
+			display: inline-block;
+			vertical-align: middle;
+		}
 
-			#header .logo .symbol {
-				margin-right: 0.65em;
-			}
+		#header .logo .symbol {
+			margin-right: 0.65em;
+		}
 
-				#header .logo .symbol img {
-					display: block;
-					width: 2em;
-					height: 2em;
-				}
+		#header .logo .symbol img {
+			display: block;
+			width: 2em; /* Default width for larger screens */
+			height: 2em; /* Default height for larger screens */
+		}
+
+		/* Styles for tablets (max-width 768px) */
+		@media screen and (max-width: 768px) {
+			#header .logo .symbol img {
+				width: 1.8em;  /* Slightly smaller for tablet */
+				height: 1.8em; /* Adjust the height to maintain aspect ratio */
+			}
+		}
+
+		/* Styles for smaller screens (phones, max-width 480px) */
+		@media screen and (max-width: 480px) {
+			#header .logo .symbol img {
+				width: 1.5em;  /* Smaller logo for phones */
+				height: 1.5em; /* Adjust height accordingly */
+			}
+		}
+
 
 		#header nav {
 			position: fixed;
