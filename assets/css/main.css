@@ -2883,25 +2883,26 @@ input, select, textarea {
 
 		#header .logo .symbol img {
 			display: block;
-			width: 2em; /* Default width for larger screens */
-			height: 2em; /* Default height for larger screens */
+			width: 48px; /* Default width for larger screens (can adjust as needed) */
+			height: auto; /* Maintain aspect ratio */
 		}
 
 		/* Styles for tablets (max-width 768px) */
 		@media screen and (max-width: 768px) {
 			#header .logo .symbol img {
-				width: 1.8em;  /* Slightly smaller for tablet */
-				height: 1.8em; /* Adjust the height to maintain aspect ratio */
+				width: 40px;  /* Smaller logo for tablets */
+				height: auto; /* Maintain aspect ratio */
 			}
 		}
 
 		/* Styles for smaller screens (phones, max-width 480px) */
 		@media screen and (max-width: 480px) {
 			#header .logo .symbol img {
-				width: 1.5em;  /* Smaller logo for phones */
-				height: 1.5em; /* Adjust height accordingly */
+				width: 32px;  /* Even smaller logo for phones */
+				height: auto; /* Maintain aspect ratio */
 			}
 		}
+
 
 
 		#header nav {
