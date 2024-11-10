@@ -178,8 +178,9 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			h1 {
-				font-size: 2em;
-				margin: 0 0 1em 0;
+				text-align:center;
+				margin: 0 0 2em 0;
+				font-size: 1em;
 			}
 
 		}
@@ -187,7 +188,9 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			h1 {
-				font-size: 1.75em;
+				text-align:center;
+				margin: 0 0 2em 0;
+				font-size: 1em;
 			}
 
 		}
