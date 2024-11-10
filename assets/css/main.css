@@ -119,7 +119,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #585858;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 16pt;
+		font-size: 2vw;
 		font-weight: 300;
 		line-height: 1.75;
 	}
@@ -127,20 +127,27 @@ input, select, textarea {
 		/* Adjust font size for smaller screens */
 		@media screen and (max-width: 1680px) {
 			body, input, select, textarea {
-				font-size: 14pt;
+				font-size: 2.5vw;
 			}
 		}
 
 		@media screen and (max-width: 1280px) {
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 2.5vw;
 			}
 		}
 
 		@media screen and (max-width: 736px) {
 			body, input, select, textarea {
-				font-size: 10pt; /* Further reduction for mobile */
+				font-size: 4vw; /* Further reduction for mobile */
 			}
+		}
+		
+			/* Max font-size to prevent overflow on larger screens */
+		@media screen and (min-width: 1920px) {
+    		body, input, select, textarea {
+        		font-size: 18pt; /* Prevent font from growing too large on big screens */
+   			}
 		}
 
 	/* Link styles */
