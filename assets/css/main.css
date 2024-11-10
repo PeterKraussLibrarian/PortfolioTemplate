@@ -248,6 +248,7 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 		text-transform: uppercase;
 		letter-spacing: 0.35em;
+		color: transparent;
 	}
 
 	h3 {
