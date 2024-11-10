@@ -175,26 +175,6 @@ input, select, textarea {
 			color: inherit;
 		}
 
-		@media screen and (max-width: 736px) {
-
-			h1 {
-				text-align:center;
-				margin: 0 0 2em 0;
-				font-size: 1em;
-			}
-
-		}
-
-		@media screen and (max-width: 360px) {
-
-			h1 {
-				text-align:center;
-				margin: 0 0 2em 0;
-				font-size: 1em;
-			}
-
-		}
-
 	h2 {
 		text-align:center;
 		font-weight: 900;
@@ -276,14 +256,6 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 736px) {
-
-		h2 {
-			font-size: 1em;
-		}
-
-		h3 {
-			font-size: .08em;
-		}
 
 	sub {
 		font-size: 0.8em;
